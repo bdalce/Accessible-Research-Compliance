@@ -22,13 +22,13 @@ FileLoc = "C:\\Users\\briana.dalce\\Documents\\all_publications_sample_new.xlsx"
 # In[4]:
 
 
-data = pd.read_excel(FileLoc, usecols = 3)
+data = pd.read_excel(FileLoc, usecols = 3) #using only columns 0-3
 
 
 # In[5]:
 
 
-data = data.dropna()
+data = data.dropna() #drops the null values within the first four columns of the spreadsheet
 
 
 # In[6]:
@@ -50,22 +50,4 @@ for i,j in data.iterrows():
     else:
         print(y, x['created'], end = '\n') #prints only the timestamp for cells stored in x 
 
-
-# In[8]:
-
-
-#def pubDate(list):
-#    for i,j in data.iterrows():
-#        x = pub.doi(j['DOI']) #finds DOI info for each cell
-#        y = j['Record Number']
-#        if x is None: #handles cells that do not have DOIs or incorrect DOIs
-#            print('')
-#        else:
-#            print(y, x['created'], end = '\n') #prints only the timestamp for cells stored in x 
-
-
-# In[9]:
-
-
-#pubDate(FileLoc)
 
