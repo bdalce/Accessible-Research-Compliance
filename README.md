@@ -12,8 +12,8 @@ Methods:
   Used pandas package to read through the sample of 1000 publications on Excel, 
   Removed any publication that did not have an AGID,
   Ran each AGID through the PubAg API search query using the urllib.request and http.client classes, 
-  Counted the amount times “Full Text” appears in each query, 
-  Counted how many rows say Full Text,
+  Counted the amount times “Full Text” appears in each query, abd
+  Counted how many rows say Full Text
 
 Results: 
   386 of the publications have full text in PubAg
@@ -24,13 +24,13 @@ Extracting DOI Dates
 Packages/Classes Used: pandas, crossref.restful 
 
 Goals:
-  To find the publication dates from the DOI, 
-  Looking for publications 2014 and beyond, specifically the 2017 fiscal year 
+  To find the publication dates from the DOI and to 
+  Look for publications 2014 and beyond, specifically the 2017 fiscal year 
 
 
 Methods: 
 Used the Crossref API to find publication info based on the DOI, 
-Imported pandas package to read through the Excel sheet and remove publications that did not have a DOI 
+Imported pandas package to read through the Excel sheet, and Remove publications that did not have a DOI 
 
 Results (calculated through Excel):
 142 publications are from the 2017 fiscal year,
