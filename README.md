@@ -1,5 +1,5 @@
 # Accessible-Research-Compliance Project
-The purpose of this project is to track compliance with the USDA Open Access Implementation Plan. USDA funded research from 2014 and beyond should have publically accessible publications and data. 
+The purpose of this project is to track compliance with the USDA Public Access Implementation Plan. USDA funded research from 2014 and beyond should have publically accessible publications and data. 
 
 PubAg Script
 
