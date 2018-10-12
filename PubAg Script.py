@@ -19,19 +19,26 @@ from collections import Counter
 # In[3]:
 
 
-File = "C:\\Users\\briana.dalce\\Documents\\all_publications_sample_new.xlsx"
+Type = input("xlsx or csv: ")
+
+if Type == 'xlsx':
+    File = input("Enter complete file path: ") 
+    df = pd.read_excel(File)
+elif Type == 'csv':
+    File = input("Enter complete file path: ") 
+    df = pd.read_csv(File)
+else:
+    print("Not valid")
+ 
 
 
-# In[4]:
 
-
-df = pd.read_excel(File, usecols = 'A,F:F') #shows only two columns (Record Number and AGID)
 
 
 # In[5]:
 
 
-df = df.dropna() #drops the rows that do not have an AGID
+df = df.dropna(subset = ['AGID']) #drops the rows that do not have an AGID
 
 
 # In[6]:
@@ -39,11 +46,12 @@ df = df.dropna() #drops the rows that do not have an AGID
 
 counter = Counter() #calls the Counter functions that tracks how often a string is used
 total = 0 #total count initialized to 0 
-
+Key = input("Enter API key: ")
 for index, row in df.iterrows(): #Checks each row in the AGID columnn
     x = row['AGID']
+    xx = math.floor(x)
     #adds the AGID to the search query
-    y = 'https://api.nal.usda.gov/pubag/rest/search/?query=agid:'+str(x)+'&api_key=B4MvzyvVMUlBvKgTcym9xcD29zIwXgD0B3rzPdQd'
+    y = 'https://api.nal.usda.gov/pubag/rest/search/?query=agid:'+str(xx)+'&api_key='+str(Key)
     try:
         z = urllib.request.urlopen(y) #opens the webpage
         text = z.read().decode('utf-8') # reads the contents of each webpage                           
