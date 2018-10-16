@@ -33,13 +33,6 @@ pub = Works()
 
 # In[5]:
 
-
-data = data.dropna() #drops the null values within the first four columns of the spreadsheet
-
-
-# In[6]:
-
-
 for i,j in data.iterrows():
     x = pub.doi(j['DOI']) #finds DOI info for each cell of the DOI column
     if x is None: #handles cells that do not have DOIs or incorrect DOIs
