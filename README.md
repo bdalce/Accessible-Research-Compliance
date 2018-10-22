@@ -12,7 +12,7 @@ Methods:
   Used pandas package to read through the sample of 1000 publications on Excel, 
   Removed any publication that did not have an AGID,
   Ran each AGID through the PubAg API search query using the urllib.request and http.client classes, 
-  Counted the amount times “Full Text” appears in each query, abd
+  Counted the amount times “Full Text” appears in each query, and
   Counted how many rows say Full Text
 
 Results: 
