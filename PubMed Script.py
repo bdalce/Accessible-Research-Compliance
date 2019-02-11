@@ -6,7 +6,6 @@
 
 import pandas as pd
 import urllib.request
-import urllib.error
 import re
 from collections import Counter
 from Bio import Entrez
@@ -63,24 +62,5 @@ for index, row in df.iterrows(): #Checks each row in the DOI columnn
          
 
 
-# In[ ]:
 
-
-#find = re.findall('true',a)
-#find2 = re.findall('error',a)
-#find3 = re.findall('release-date',a)
-#for i in find:
-    #count = Counter(find)
-    #if count == Counter({'true': 1}):
-        #print(index,'YES')  
-#for i in find2:
-    #count = Counter(find2)
-    #if count == Counter({'error': 1}):
-        #print(index,'NO') 
-#for i in find2:
-    #count = Counter(find3)
-    #if count == Counter({'error': 1}):
-        #print(index,'NO')     
-    #else:
-        #print(index, 'NO (not released yet)'
 
