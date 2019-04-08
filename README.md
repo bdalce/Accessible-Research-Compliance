@@ -1,9 +1,11 @@
 Publicly Accessible Research Compliance
 
 Goals: 
+To determine the percentage of publicly accessible ARS publications
+To automate the publication tracking process.
+
 
 Scripts:
-
 PubAg:
 Searches through articles with AGIDs to see if there is full text in PubAg
 Converts the AGID to a string 
