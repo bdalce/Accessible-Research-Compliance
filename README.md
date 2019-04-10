@@ -9,6 +9,7 @@ To automate the publication tracking process.
 Scripts:
 
 Publication Info:
+
 Uses Crossref to find the publisher and date of publication from a specific DOI.
 
 PubAg:
