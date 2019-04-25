@@ -10,7 +10,7 @@ Scripts:
 
 Publication Info:
 
-Uses Crossref to find the publisher and date of publication from a specific DOI.
+Uses Crossref to find the publisher and date of publication for a specific DOI.
 
 PubAg:
 
@@ -34,6 +34,7 @@ Public Access Journals:
 
 Reads the prefix of the DOI to determine if a publisher/organization is publicly accessible
 Reads the suffix of the DOI to determine if a specific journal is publicly accessible
+Uses the SpringerNature and Elsevier APIs find publicly accessible articles from those publications
 
 
 
