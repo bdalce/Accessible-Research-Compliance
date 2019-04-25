@@ -2,12 +2,13 @@ Publicly Accessible Research Compliance
 
 Goals: 
 
-  To determine the percentage of publicly accessible ARS publications
+    To determine the percentage of publicly accessible ARS publications
 
-  To automate the publication tracking process.
+    To automate the publication tracking process.
 
 
 Scripts:
+    The following scripts use information in VIVO from ARIS
 
   Publication Info:
 
