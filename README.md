@@ -15,6 +15,8 @@ Scripts:
     Uses Crossref to find the publisher and date of publication for a specific DOI.
 
   PubAg:
+  
+  The PubAg API allows users with an assigned API key to search through the metadata of articles to gain useful information. This API is   used in this script because users can find either citations or full text of an article by inputting the AGID. Full text under a       particular tell us that the article is publicly accessible on PubAg.
 
     Searches through articles with AGIDs to see if there is full text in PubAg
 
