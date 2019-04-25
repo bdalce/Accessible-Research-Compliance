@@ -25,7 +25,7 @@ Scripts:
     Uses regex to find the phrase "Full Text"
 
   PubMedCentral:
-
+  The DOI converter API for PubMedCentral converts DOIs to PMIDs or PMCIDs. This API was chosen for this script because an article having a PMCID tells us it is available on PubMedCentral where full text articles are shared with the public. 
     Converts article DOIs to PMCIDs 
 
     Uses regex to find the phrases "true" and "false"
