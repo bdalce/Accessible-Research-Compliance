@@ -32,9 +32,9 @@ Scripts:
 
     Uses regex to find the phrases "true" and "false"
 
-    False: not available
+            False: not available
 
-    True: available 
+            True: available 
 
   CHORUS:
   
