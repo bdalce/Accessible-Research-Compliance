@@ -37,18 +37,22 @@ Scripts:
     True: available 
 
   CHORUS:
+  
+ The CHORUS API hold metadata for DOIs 
 
     Searches for the DOI on the CHORUS API page to see if the article is available in CHORUS
 
     Converts DOI to a string to match the format on the CHORUS API page 
 
    Public Access Journals:
+   
+   This script checks to see if there are publicly accessible journals and articles. DOI number is based on the journal and articles. When the journal is open access, this script reads the DOI and returns it as 'YES' for publicly accessible. Public Access Journals script also looks at the SpringerNature and Elsevier APIs to check for accessibility from those organizations. The SpringerNature API requires an API key that allows users to read the metadata from a SpringerNature article. The API will tell a user if an article is open access. The Elsevier API uses a URL with the given DOI to return metadata that tells the user if an article is open access.
 
     Reads the prefix of the DOI to determine if a publisher/organization is publicly accessible
 
     Reads the suffix of the DOI to determine if a specific journal is publicly accessible
 
-    Uses the SpringerNature and Elsevier APIs find publicly accessible articles from those publications
+    Uses the SpringerNature and Elsevier APIs to find publicly accessible articles from those publications
 
 
 
