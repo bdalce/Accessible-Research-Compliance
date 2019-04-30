@@ -38,7 +38,7 @@ Scripts:
 
   CHORUS:
   
- The CHORUS API hold metadata for DOIs 
+ CHORUS is a publisher-led dashboard that contains articles of federal-funded research. The CHORUS API holds metadata for available DOIs, and users can use this API to fiud if an article is publicly accessible on a given date.
 
     Searches for the DOI on the CHORUS API page to see if the article is available in CHORUS
 
