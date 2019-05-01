@@ -13,14 +13,11 @@ from collections import Counter
 # In[ ]:
 
 
-Type = input("xlsx or csv: ")
+Type = input("Enter file type: ")
 
 if Type == 'xlsx':
     File = input("Enter complete file path: ") 
     df = pd.read_excel(File)
-elif Type == 'csv':
-    File = input("Enter complete file path: ") 
-    df = pd.read_csv(File)
 else:
     print("Not valid")
 
