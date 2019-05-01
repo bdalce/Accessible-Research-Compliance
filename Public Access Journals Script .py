@@ -56,13 +56,11 @@ for index, row in df.iterrows(): #Checks each row in the DOI columnn
             print(index, 'YES')
         else:
             print(index, 'NO') 
-    #EDIT THIS SECTION
     elif "10.1093/" in y or "10.3495/" in y or "10.2527/" in y:
         if "gigascience" in y or "gbe" in y or "aobpla" in y or "fqsafe" in y or "database" in y or "cdn" in y:
             print(index, 'YES')
         else:
             print(index, 'NO')
-    #EDIT THIS SECTION
     elif "10.1002/" in y or "10.1111/" in y or "10.3732/" in y :
         if "fsn3" in y or "gcbb" in y or "pbi" in y or "tpj" in y or "ajb" in y  or "rse" in y or "mbo" in y:
             print(index, 'YES')
