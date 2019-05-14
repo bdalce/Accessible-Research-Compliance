@@ -1,6 +1,7 @@
 
 # coding: utf-8
 
+#Code is similar to Sheet Join.py, but this script allows users to input any spreadsheet, column, or join method. 
 # In[ ]:
 
 
@@ -8,7 +9,6 @@ import pandas
 
 
 # In[ ]:
-
 
 file_one = input("Enter first file path: ")
 file_two = input("Enter second file path: ")
