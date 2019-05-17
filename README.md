@@ -54,5 +54,16 @@ Scripts:
 
     Uses the SpringerNature and Elsevier APIs to find publicly accessible articles from those publications
 
-
+ Accession Numbers:
+    This script calculates the percentage of all ARS 2017 accession numbers that have at least one associated dataset in Ag Data Commons. 
+        
+      Iterates through the 'Accession' column to find any duplicate accession numbers
+      
+      Accession numbers are added to an empty list and the total count increases 
+      
+      Acession numbers with a dataset are added into a second empty and the counter for this list increases
+      
+      Divide the counter by the total to find the percentage. 
+      
+     
 
